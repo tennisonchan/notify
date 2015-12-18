@@ -1,0 +1,25 @@
+{
+  "name": "Notify",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "minimum_chrome_version": "23",
+  "description": "Using Pusher to push notifications to teammates",
+  "content_security_policy":"script-src 'self' https://*.pusher.com; object-src 'self'",
+  "icons": {
+    "16": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
+  "browser_action": {
+    "default_title": "Notify",
+    "default_icon": "assets/icon.png"
+  },
+  "background": {
+    "page": "html/background.html"
+  },
+  "permissions": [
+    "notifications",
+    "identity",
+    "identity.email"
+  ]
+}
